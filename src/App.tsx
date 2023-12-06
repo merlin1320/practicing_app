@@ -2,14 +2,15 @@ import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import { Button } from './Button'
+import Loki from './assets/Loki.jpg'
 
 function App() {
   const [count, setCount] = useState(0)
 
+
   return (
     <>
-      <div>
+      {/* <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
@@ -25,13 +26,25 @@ function App() {
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
-        <Button>
-           <Button>Fucking Button Bitch 000</Button>
-        </Button>
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
-      </p>
+      </p> */}
+
+      <div>
+        <h1>
+          Relearning to code
+        </h1>
+          <p>
+            I am learning how to code again after a 10 year haitus. 
+          </p>
+          <p >
+            <img src={Loki} className='loki-photo' alt='Loki'/>
+          </p>
+          <p>
+            I have no clue what I am doing
+          </p>
+      </div>
     </>
   )
 }
