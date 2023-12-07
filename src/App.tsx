@@ -3,6 +3,8 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Loki from './assets/Loki.jpg'
+import {Birthday} from './Birthday'
+import { Button } from './Button'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -36,7 +38,8 @@ function App() {
           Relearning to code
         </h1>
           <p>
-            I am learning how to code again after a 10 year haitus. 
+            I am learning how to code again after a 10 year haitus. I am <Birthday/> years old.  
+            {/* <Button children={undefined}/> */}
           </p>
           <p >
             <img src={Loki} className='loki-photo' alt='Loki'/>

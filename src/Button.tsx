@@ -1,9 +1,10 @@
 import { FC, ReactNode } from "react"
 
 type ButtonProps = {
-    children: ReactNode
+    children: ReactNode;
+    title: string;
 }
 
-export const Button:FC<ButtonProps> =(props ) => {
+export function Button(props:ButtonProps){
     return props.children
 }
