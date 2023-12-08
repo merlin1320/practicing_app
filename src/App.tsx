@@ -22,7 +22,7 @@ function App() {
             This is my old cat Loki. He was a great cat even though he liked to play around. 
           </p>
           <p>
-            I have no clue what I am doing
+            I have no clue what I am doing. Someone save me. 
           </p>
           <p>
              <a href="https://github.com/merlin1320/practicing_app" target='_blank'>Here is the code I am working on</a>
