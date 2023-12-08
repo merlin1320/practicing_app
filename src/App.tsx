@@ -1,13 +1,13 @@
-import { useEffect, useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+// import { useEffect, useState } from 'react'
+// import reactLogo from './assets/react.svg'
+// import viteLogo from '/vite.svg'
 import './App.css'
 import Loki from './assets/Loki.jpg'
 import {Birthday} from './Birthday'
-import { Button } from './Button'
+// import { Button } from './Button'
 
 function App() {
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0)
 
 
   return (
@@ -38,15 +38,17 @@ function App() {
           Relearning to code
         </h1>
           <p>
-            I am learning how to code again after a 10 year haitus. I am <Birthday/> years old.  
+            I am learning how to code again after a 10 year haitus. I am <Birthday/> years old. 
             {/* <Button children={undefined}/> */}
           </p>
           <p >
             <img src={Loki} className='loki-photo' alt='Loki'/>
+            This is my old cat Loki. He was a great cat even though he liked to play around. 
           </p>
           <p>
             I have no clue what I am doing
           </p>
+          <a href="https://github.com/merlin1320/practicing_app">Here is the code I am working on</a>
       </div>
     </>
   )
