@@ -48,3 +48,13 @@
 .text-talk{
   color: cyan;
 }
+
+p {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.heading{
+  padding-top: 25px;
+  padding-bottom: 10px;
+}
