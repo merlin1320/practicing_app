@@ -1,7 +1,9 @@
-import './App.css'
-import { About } from './About.tsx'
-import { Link, Route, Routes } from "react-router-dom";
-import Home from './Home.tsx';
+import './styles/App.css'
+import './styles/styles.css'
+import { About } from './pages/About.tsx'
+import { Route, Routes } from "react-router-dom";
+import Home from './pages/Home.tsx';
+import NavBar from './NavBar.tsx';
 
 function App() {
 
@@ -9,12 +11,16 @@ function App() {
   return (
     <>
       <div>
+        <header className='heading'><NavBar /></header>
+      </div>
+      <div>
         {/* <a href='./About.tsx'>About Me</a> */}
-        <Link to='About'>About</Link>
-        <Link to='Home'>Home</Link>
+        {/* <Link to='About' className='navbutton'>About</Link>
+        <Link to='Home' className='navbutton'>Home</Link> */}
         <Routes>
-          <Route path='Home'element={<Home/>}/>
+          <Route path='/'element={<Home/>}/>
           <Route path='About' element={<About/>}/>
+          <Route path='Home'element={<Home/>}/>
         </Routes>
       </div>
 
