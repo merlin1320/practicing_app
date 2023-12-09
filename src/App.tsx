@@ -11,9 +11,6 @@ function App() {
   return (
     <>
       <div>
-        <header className='heading'><NavBar /></header>
-      </div>
-      <div>
         {/* <a href='./About.tsx'>About Me</a> */}
         {/* <Link to='About' className='navbutton'>About</Link>
         <Link to='Home' className='navbutton'>Home</Link> */}
