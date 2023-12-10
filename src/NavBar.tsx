@@ -14,11 +14,9 @@ import { Link } from "react-router-dom";
   export function NavBar() {
     return (
       <div className="navbar-container">
-      {/* <button><Link to='Home'>Home</Link></button>
-      <button><Link to='About'>About</Link></button> */}
+
       <Link to='Home'>Home</Link>
       <Link to='About'>About</Link>
-      {/* <Link to='User'>Users</Link> */}
       
       {books.map((name)=>{        
         return (<Link to={`Books/${name}`}>{name}</Link>)})}
