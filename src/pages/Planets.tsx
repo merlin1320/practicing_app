@@ -8,6 +8,10 @@ export function Planets() {
     <>
       <div>
         Planet {Planets}
+        
+      </div>
+      <div>
+      <img className='images' src={`/Planets/${Planets}.jpg`}/>
       </div>
     </>
   )

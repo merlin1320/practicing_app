@@ -16,25 +16,19 @@ function App() {
       <header><NavBar/></header>
     </div>
       <div>
-        {/* <a href='./About.tsx'>About Me</a> */}
-        {/* <Link to='About' className='navbutton'>About</Link>
-        <Link to='Home' className='navbutton'>Home</Link> */}
         <Routes>
           <Route path='/'element={<Home/>}/>
           <Route path='About' element={<About/>}/>
           <Route path='Home'element={<Home/>}/>
-          {/* <Route path='user/:userID' element={<User/>}/> */}
           <Route path='/Planets/:Planets' element={<Planets/>}/>
           <Route path='/Pokemon/:Pokemon' element={<Pokemon/>}/>
-          <Route path='/Books/:Books' element={<Books/>}/>
-          
+          <Route path='/Books/:Books' element={<Books/>}/>          
           <Route path='*' element={<p>Fuck you wrong site</p>}/>
         </Routes>
       </div>
-
-      
     </>
   )
 }
 
 export default App
+
