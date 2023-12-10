@@ -4,7 +4,6 @@ import {Birthday} from '../Birthday'
 
 export function About() {
 
-
   return (
     <>
       <div className='heading'>
@@ -39,3 +38,5 @@ export function About() {
 }
 
  export default About
+
+
