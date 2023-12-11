@@ -2,6 +2,7 @@
 // import {Home} from './pages/Home'
 import "./styles/styles.css";
 import { Link, useNavigate } from "react-router-dom";
+import {LinkList} from './LinkList' 
 
 // import React from "react";
 
@@ -11,13 +12,15 @@ import { Link, useNavigate } from "react-router-dom";
   
   export function NavBar() {
     const navigate = useNavigate();
-    
+    let element = document.getElementById('LinkListID')
+
     return (
       <div >
 
-        <div className="navbar-container">
+        <div className="links">
           <Link to='Home'>Home</Link>
           <Link to='About'>About</Link>
+          <Link to='GoldCounter'>Gold Counter</Link>
 
         </div>
       {/* {books.map((name)=>{        
@@ -27,7 +30,9 @@ import { Link, useNavigate } from "react-router-dom";
         {pokemon.map((name)=>{        
         return (<Link to={`Pokemon/${name}`}>{name}</Link>)})} */}
         <div className="navbar-container">
-          <select onChange={(e)=>{
+          <input type='checkbox' id='LinkListID'/>
+          
+          {/* <select onChange={(e)=>{
             navigate(e.target.value)
           }}>
             <option value='Home'>Books</option>
@@ -47,7 +52,7 @@ import { Link, useNavigate } from "react-router-dom";
             <option value='Home'>Pokemon</option>
             {pokemon.map((name)=>{  
               return (<option value={`Pokemon/${name}`} key={name}>{name}</option>)})}
-          </select>      
+          </select>       */}
         </div>
     </div>
   )

@@ -12,9 +12,12 @@ function App() {
 
   return (
     <>
-    <div>
-      <header><NavBar/></header>
-    </div>
+    {/* <div> */}
+
+     <nav>
+      <header className='navbar'><NavBar/></header>
+      </nav> 
+    <body>
       <div>
         <Routes>
           <Route path='/'element={<Home/>}/>
@@ -22,10 +25,12 @@ function App() {
           <Route path='Home'element={<Home/>}/>
           <Route path='/Planets/:Planets' element={<Planets/>}/>
           <Route path='/Pokemon/:Pokemon' element={<Pokemon/>}/>
-          <Route path='/Books/:Books' element={<Books/>}/>          
+          <Route path='/Books/:Books' element={<Books/>}/>
           <Route path='*' element={<p>Fuck you wrong site</p>}/>
         </Routes>
       </div>
+    </body>
+    {/* </div> */}
     </>
   )
 }
