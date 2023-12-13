@@ -37,3 +37,11 @@
   /* display: inherit;
   visibility: visible; */
 }
+
+div.colorchange{
+  padding: 10px;
+  border-radius: 2px;
+  position: bottom;
+  border-style: double;
+  border-color: white;
+}

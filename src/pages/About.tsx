@@ -14,7 +14,6 @@ export function About() {
       <div>
           <p>
             I am learning how to code again after a 10 year haitus. I am <Birthday birthdate="1992-01-09"/> years old. 
-            {/* Vinny is <Birthday birthdate='1991-01-23'/> years old */}
           </p>
       </div>
       <div>

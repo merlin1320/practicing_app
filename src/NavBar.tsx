@@ -19,7 +19,7 @@ import { useState } from 'react';
         <div className="navbar-container">
           <p>
             <input type='checkbox' id='LinkListID' checked={show} onChange={()=>{setShow(!show)}}/>
-            <label htmlFor="checkbox">Show other links </label>
+            <label htmlFor="checkbox"> Show other links </label>
           </p>
           { show && <div className="linkslist">
             <LinkList/>

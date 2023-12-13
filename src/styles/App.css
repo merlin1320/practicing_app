@@ -16,6 +16,14 @@ p {
   padding-bottom: 10px;
 }
 
+div.colorchange{
+  padding: 10px;
+  border-radius: 2;
+  position: bottom;
+  border-style: double;
+  border-color: white;
+}
+
 /* .navbar {
   align-items: center;
   justify-content: space-evenly;
