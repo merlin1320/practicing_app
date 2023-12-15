@@ -1,8 +1,6 @@
 import './styles/styles.css'
 import {useNavigate } from "react-router-dom";
 
-
-
 const planets = ['Mercury', 'Venus', 'Earth','Mars','Jupiter','Saturn','Uranus', 'Neptune', 'Pluto']
 const pokemon = ['Bulbasaur', 'Ivysaur', 'Venusaur', 'Charmander', 'Charmeleon', 'Charizard', 'Squirtle', 'Wartortle', 'Blastoise']
 const books = ['LOTR', 'SoT', 'Cradle', 'Percy Jackson', 'Halo', 'Legend of Drizzt']
