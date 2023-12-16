@@ -7,8 +7,7 @@ export function Planets() {
   return (
     <>
       <div>
-        Planet {Planets}
-        
+        Planet {Planets} 
       </div>
       <div>
       <img className='images' src={`/Planets/${Planets}.jpg`}/>
