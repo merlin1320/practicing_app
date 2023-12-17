@@ -1,9 +1,8 @@
 import './styles/App.css'; import './styles/styles.css'; import './index.css'
-import { About } from './pages/About.tsx'; import { Route, Routes, useSearchParams } from "react-router-dom"; import Home from './pages/Home.tsx'; import NavBar from './NavBar.tsx';
-import Planets from './pages/Planets.tsx'; import Pokemon from './pages/Pokemon.tsx'; import Books from './pages/Books.tsx'; import { useEffect, useState } from 'react';
-import React from 'react'; import { ColorChange } from './ColorChange.tsx';
-
-
+import { About } from './pages/About.tsx'; import Home from './pages/Home.tsx'; import NavBar from './NavBar.tsx'; import { ColorChange } from './ColorChange.tsx';
+import { Route, Routes, useSearchParams } from "react-router-dom"; 
+import Planets from './pages/Planets.tsx'; import Pokemon from './pages/Pokemon.tsx'; import Books from './pages/Books.tsx'; 
+import { useEffect, useState } from 'react'; 
 
 
 

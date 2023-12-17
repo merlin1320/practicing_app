@@ -14,16 +14,17 @@ import { useState } from 'react';
         <div className="links">
           <Link to='Home'>Home</Link>
           <Link to='About'>About</Link>
-
         </div>
         <div className="navbar-container">
-          <p>
+          <div style={{width: 1000}}>
             <input type='checkbox' id='LinkListID' checked={show} onChange={()=>{setShow(!show)}}/>
             <label htmlFor="checkbox"> Show other links </label>
-          </p>
+          </div>
+          <div style={{width: 1000}}>
           { show && <div className="linkslist">
             <LinkList/>
           </div> }
+          </div>
         </div>
     </div>
   )

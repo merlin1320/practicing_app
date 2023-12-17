@@ -8,10 +8,10 @@ export function ColorChange(props : any){
 
     return (
         <div className='colorchange'>
-          <p>
+          <div>
             <input type='checkbox' id='LinkListID' checked={show} onChange={()=>{setShow(!show)}}/>
             <label htmlFor="checkbox"> Change the background color </label>
-          </p>
+          </div>
           { show && <div className="linkslist">
               <div>
               <div>
@@ -22,7 +22,7 @@ export function ColorChange(props : any){
                 </select>
               </div>
               <div>
-                <p>Enter your own color here: </p>
+                <label>Enter your own color here: </label>
                 <input value={props.color} onChange={(e)=>{props.setColor(e.target.value.toLowerCase())}} id='colortext' type='text'/>
               </div>
             </div>
