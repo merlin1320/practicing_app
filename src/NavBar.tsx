@@ -14,6 +14,7 @@ import { useState } from 'react';
         <div className="links">
           <Link to='Home'>Home</Link>
           <Link to='About'>About</Link>
+          <Link to='Game'>Game</Link>
         </div>
         <div className="navbar-container">
           <div style={{width: 1000}}>

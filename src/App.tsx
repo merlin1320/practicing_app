@@ -4,7 +4,8 @@ import { Route, Routes, useSearchParams } from "react-router-dom";
 import Planets from './pages/Planets.tsx'; import Pokemon from './pages/Pokemon.tsx'; import Books from './pages/Books.tsx'; 
 import { useEffect, useState } from 'react'; 
 import BackgroundColorContext from './context/BackgroundColorContext.tsx';
-
+import Game from './GoldGame/Game.tsx';
+import Test from './ContextsLearning/Test.tsx'
 
 
 function App() {
@@ -12,17 +13,19 @@ function App() {
 
   const [params] = useSearchParams();
 
+
   const updateColors = (newColor : string) => {
     setColor(newColor)
     document.body.style.backgroundColor = newColor;
   }
-  
+
   useEffect (()=> {
     const c = params.get('theme')
     const val : string = c ?? '#242424';
     document.body.style.backgroundColor = val;
     setColor(val);
   }, [])
+
 
   return (
     <>
@@ -41,9 +44,11 @@ function App() {
             <Route path='/Planets/:Planets' element={<Planets/>}/>
             <Route path='/Pokemon/:Pokemon' element={<Pokemon/>}/>
             <Route path='/Books/:Books' element={<Books/>}/>
+            <Route path='/Game' element={<Game/>}/>
             <Route path='*' element={<p>Fuck you wrong site</p>}/>
           </Routes>
           <ColorChange color = {color} setColor = {updateColors}/>
+          <Test/>
         </div>
       </BackgroundColorContext.Provider>
     </>
